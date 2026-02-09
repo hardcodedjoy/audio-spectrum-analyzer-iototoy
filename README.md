@@ -1,6 +1,6 @@
 # Audio Spectrum Analyzer (made in IoToToy)
 
-A real-time audio spectrum analyzer built using the [IoToToy](https://iototoy.com) visual programming app for Android.
+A real-time audio spectrum analyzer built using the [IoToToy](https://play.google.com/store/apps/details?id=com.hardcodedjoy.iototoy&referrer=utm_source%3Dgh) visual programming app for Android.
 
 <img src="Screenshot_20260209_122553_IoToToy.jpg" width="240" alt="Visual diagram of the audio spectrum analyzer">
 
@@ -30,4 +30,4 @@ The logic is defined in `audio spectrum analyzer.json` and follows this flow:
 ## Requirements
 
 *   Android device with microphone access.
-*   IoToToy app (v1.0.5 or newer).
+*   [IoToToy app](https://play.google.com/store/apps/details?id=com.hardcodedjoy.iototoy&referrer=utm_source%3Dgh) (v1.0.5 or newer).
