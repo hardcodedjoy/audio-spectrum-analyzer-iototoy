@@ -2,6 +2,8 @@
 
 A real-time audio spectrum analyzer built using the [IoToToy](https://iototoy.com) visual programming app for Android.
 
+<img src="Screenshot_20260209_122553_IoToToy.jpg" width="240" alt="Visual diagram of the audio spectrum analyzer">
+
 ## Overview
 
 This project visualizes audio frequencies captured from the device microphone. It processes the signal through a Hann window and a Fast Fourier Transform (FFT) to display a frequency distribution from 0 Hz to 2 kHz.
