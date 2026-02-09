@@ -1,0 +1,331 @@
+{
+  "software": "com.hardcodedjoy.iototoy",
+  "version": "1.0.5",
+  "displayMode": "diagram",
+  "diagramOffsetX": -79.64445,
+  "diagramOffsetY": -59.733334,
+  "diagramBlocks": [
+    {
+      "type": "microphone",
+      "top": 179.2,
+      "bottom": 238.93333,
+      "left": 99.55556,
+      "right": 159.2889,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 1,
+              "port": 0
+            }
+          ]
+        }
+      ],
+      "sampleRate": 8000,
+      "numChannels": 1
+    },
+    {
+      "type": "get_samples",
+      "top": 179.2,
+      "bottom": 238.93333,
+      "left": 179.2,
+      "right": 238.93333,
+      "inputPorts": [
+        {
+          "name": "x"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 2,
+              "port": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hann_window",
+      "top": 179.2,
+      "bottom": 238.93333,
+      "left": 248.88889,
+      "right": 308.62222,
+      "inputPorts": [
+        {
+          "name": "x"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 6,
+              "port": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fft",
+      "top": 288.71112,
+      "bottom": 348.44446,
+      "left": 278.75555,
+      "right": 338.4889,
+      "inputPorts": [
+        {
+          "name": "Rx"
+        },
+        {
+          "name": "Ix"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "RX",
+          "linkedPorts": [
+            {
+              "block": 4,
+              "port": 0
+            }
+          ]
+        },
+        {
+          "name": "IX",
+          "linkedPorts": [
+            {
+              "block": 4,
+              "port": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "square_sum",
+      "top": 288.71112,
+      "bottom": 348.44446,
+      "left": 358.4,
+      "right": 418.13333,
+      "inputPorts": [
+        {
+          "name": "x"
+        },
+        {
+          "name": "y"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 8,
+              "port": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "progress_bar",
+      "top": 448.0,
+      "bottom": 696.8889,
+      "left": 189.15555,
+      "right": 388.26666,
+      "inputPorts": [
+        {
+          "name": "in"
+        }
+      ],
+      "outputPorts": [
+        
+      ],
+      "colorOn": -2039808,
+      "colorOff": -11513776
+    },
+    {
+      "type": "array_buffer",
+      "top": 258.84445,
+      "bottom": 318.5778,
+      "left": 189.15555,
+      "right": 248.88889,
+      "inputPorts": [
+        {
+          "name": "x"
+        },
+        {
+          "name": "sz"
+        },
+        {
+          "name": "end"
+        },
+        {
+          "name": "to"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 3,
+              "port": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "constant",
+      "top": 258.84445,
+      "bottom": 318.5778,
+      "left": 99.55556,
+      "right": 159.2889,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 6,
+              "port": 1
+            }
+          ]
+        }
+      ],
+      "dataType": "int",
+      "dataRepresentation": "dec",
+      "value": 512
+    },
+    {
+      "type": "array_slice",
+      "top": 368.35556,
+      "bottom": 428.0889,
+      "left": 328.53333,
+      "right": 388.26666,
+      "inputPorts": [
+        {
+          "name": "x"
+        },
+        {
+          "name": "s"
+        },
+        {
+          "name": "e"
+        }
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 5,
+              "port": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "constant",
+      "top": 328.53333,
+      "bottom": 378.3111,
+      "left": 189.15555,
+      "right": 248.88889,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 8,
+              "port": 1
+            }
+          ]
+        }
+      ],
+      "dataType": "int",
+      "dataRepresentation": "dec",
+      "value": 0
+    },
+    {
+      "type": "constant",
+      "top": 378.3111,
+      "bottom": 428.0889,
+      "left": 189.15555,
+      "right": 248.88889,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        {
+          "name": "out",
+          "linkedPorts": [
+            {
+              "block": 8,
+              "port": 2
+            }
+          ]
+        }
+      ],
+      "dataType": "int",
+      "dataRepresentation": "dec",
+      "value": 128
+    },
+    {
+      "type": "text",
+      "top": 676.9778,
+      "bottom": 766.57776,
+      "left": 159.2889,
+      "right": 228.97778,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        
+      ],
+      "text": " |\n0 Hz"
+    },
+    {
+      "type": "text",
+      "top": 676.9778,
+      "bottom": 766.57776,
+      "left": 358.4,
+      "right": 438.04443,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        
+      ],
+      "text": " |\n2 kHz"
+    },
+    {
+      "type": "text",
+      "top": 49.77778,
+      "bottom": 179.2,
+      "left": 99.55556,
+      "right": 448.0,
+      "inputPorts": [
+        
+      ],
+      "outputPorts": [
+        
+      ],
+      "text": "AUDIO SPECTRUM\nANALYZER"
+    }
+  ]
+}
