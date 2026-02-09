@@ -12,7 +12,7 @@ This project visualizes audio frequencies captured from the device microphone. I
 
 The logic is defined in `audio spectrum analyzer.json` and follows this flow:
 
-1.  **Microphone**: Captures mono audio at 8000 Hz.
+1.  **Microphone**: Configured to capture mono audio at 8000 Hz.
 2.  **Hann Window**: Smooths the input signal to improve FFT accuracy.
 3.  **Buffer**: Groups data into blocks of 512 samples.
 4.  **FFT**: Converts audio from the Time Domain to the Frequency Domain.
